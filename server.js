@@ -84,7 +84,7 @@ if (req.query.apiKey==undefined) {
 	  category: source==undefined?cat:null,
 	  country: source==undefined?countr:null,
 	  sources: source,
-	  pageSize:limit!=undefined?limit:30,
+	  pageSize:limit!=undefined?limit:600,
 	  language:req.query.language,
 	}).then(response => {
 	  res.json(response);
